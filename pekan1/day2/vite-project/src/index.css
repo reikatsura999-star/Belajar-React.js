@@ -1,0 +1,86 @@
+/* Styling global */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #9ea1a3;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Judul utama */
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+/* ProfileCard */
+.profile-card {
+  border: 1px solid #6d6565;
+  border-radius: 8px;
+  padding: 16px;
+  width: 250px;
+  text-align: center;
+  margin: 20px auto;
+  background-color: #818080;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.profile-card img {
+  width: 100px;
+  border-radius: 50%;
+}
+
+.profile-card h2 {
+  margin: 10px 0 5px;
+  color: #444;
+}
+
+.profile-card p {
+  font-size: 14px;
+  color: #fefefe;
+}
+
+.profile-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.profile-card li {
+  background: #e6f7ff;
+  margin: 4px 0;
+  padding: 6px;
+  border-radius: 4px;
+}
+
+/* MathExpression */
+.math-box {
+  margin: 20px auto;
+  padding: 12px;
+  border: 1px dashed #aaa;
+  width: 300px;
+  background: #fafafa;
+}
+
+/* ConditionalMessage */
+.message-box {
+  margin: 20px auto;
+  padding: 12px;
+  border: 1px solid #ddd;
+  width: 300px;
+  background: #fffbe6;
+}
+
+/* ListRenderer */
+.list-box {
+  margin: 20px auto;
+  padding: 12px;
+  border: 1px solid #ddd;
+  width: 300px;
+  background: #f6ffed;
+}
+.list-box ul {
+  list-style-type: disc;     /* tetap pakai bullet */
+  list-style-position: inside; /* bullet masuk ke dalam kotak */
+  padding-left: 0;             /* hilangkan padding bawaan */
+  margin: 0;                   /* hilangkan margin bawaan */
+  box-sizing: border-box;      /* pastikan bullet ikut hitung lebar box */
+}
