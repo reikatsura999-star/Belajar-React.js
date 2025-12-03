@@ -1,5 +1,5 @@
 import React from "react";
-
+//css nya
 const styles = {
   app: {
     fontFamily: "Arial, sans-serif",
@@ -71,6 +71,8 @@ const styles = {
   }
 };
 
+
+//logic nya
 function ProfileCard({ name, photo, bio, skills }) {
   return (
     <div style={styles.card}>
