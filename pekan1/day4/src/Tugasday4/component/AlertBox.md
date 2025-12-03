@@ -1,10 +1,4 @@
-import React from 'react';
-
-// Komponen AlertBox dengan Dynamic Styling berdasarkan props
-function AlertBox({ type = 'info', message, title }) {
-    // Fungsi untuk mendapatkan style berdasarkan type
-    const getAlertStyle = (alertType) => {
-        const baseStyle = {
+   const baseStyle = {
             padding: '8px',
             borderRadius: '4px',
             marginBottom: '6px',
