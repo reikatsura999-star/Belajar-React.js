@@ -1,3 +1,4 @@
+```jsx
 import React from 'react';
 import './Card.css'; // Import file CSS
 

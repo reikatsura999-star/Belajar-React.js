@@ -1,3 +1,4 @@
+```jsx
 import React from 'react';
 import styles from './Button.module.css'; // Import CSS Modules
 
@@ -5,7 +6,15 @@ import styles from './Button.module.css'; // Import CSS Modules
 function Button() {
     return (
         <div className={styles.buttonContainer}>
-            <h3 style={{ width: '100%', textAlign: 'center', color: '#2c3e50', marginBottom: '5px', fontSize: '12px' }}>
+            <h3
+                style={{
+                    width: '100%',
+                    textAlign: 'center',
+                    color: '#2c3e50',
+                    marginBottom: '5px',
+                    fontSize: '12px'
+                }}
+            >
                 🎨 CSS Modules
             </h3>
 

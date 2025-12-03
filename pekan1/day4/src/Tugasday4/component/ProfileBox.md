@@ -1,3 +1,4 @@
+```jsx
 import React from 'react';
 
 // Komponen ProfileBox menggunakan Inline Styles

@@ -1,3 +1,4 @@
+```jsx
 import React from 'react';
 import styles from './ResponsiveCard.module.css';
 

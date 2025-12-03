@@ -1,3 +1,4 @@
+```css
 /* ResponsiveCard.module.css - CSS Modules dengan Media Queries */
 
 .container {

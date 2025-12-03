@@ -1,7 +1,9 @@
+```jsx
 import React from 'react';
 
 // Komponen AlertBox dengan Dynamic Styling berdasarkan props
 function AlertBox({ type = 'info', message, title }) {
+    
     // Fungsi untuk mendapatkan style berdasarkan type
     const getAlertStyle = (alertType) => {
         const baseStyle = {
@@ -9,7 +11,7 @@ function AlertBox({ type = 'info', message, title }) {
             borderRadius: '4px',
             marginBottom: '6px',
             border: '2px solid',
-            fontSize: '10px'
+            fontSize: '10px' // Ukuran font dasar
         };
 
         const typeStyles = {
@@ -28,7 +30,7 @@ function AlertBox({ type = 'info', message, title }) {
                 borderColor: '#dc3545',
                 color: '#721c24'
             },
-            info: {
+            info: { // Default type
                 backgroundColor: '#d1ecf1',
                 borderColor: '#17a2b8',
                 color: '#0c5460'
@@ -49,7 +51,7 @@ function AlertBox({ type = 'info', message, title }) {
         return icons[alertType] || icons.info;
     };
 
-    // Style untuk title
+    // Style untuk title (judul)
     const titleStyle = {
         fontSize: '11px',
         fontWeight: 'bold',
@@ -59,11 +61,11 @@ function AlertBox({ type = 'info', message, title }) {
         gap: '5px'
     };
 
-    // Style untuk message
+    // Style untuk message (pesan)
     const messageStyle = {
         fontSize: '10px',
         lineHeight: '1.3',
-        marginLeft: '18px'
+        marginLeft: '18px' // Indentasi agar sejajar dengan teks judul
     };
 
     return (
@@ -79,34 +81,4 @@ function AlertBox({ type = 'info', message, title }) {
     );
 }
 
-// Komponen wrapper untuk menampilkan semua variasi AlertBox
-function AlertBoxDemo() {
-    return (
-        <div style={{ padding: '10px', backgroundColor: '#f8f9fa', borderRadius: '6px' }}>
-            <h3 style={{ textAlign: 'center', color: '#2c3e50', marginBottom: '8px', fontSize: '12px' }}>
-                🔔 Dynamic Styling
-            </h3>
-
-            <AlertBox
-                type="success"
-                title="Berhasil!"
-                message="Data berhasil disimpan."
-            />
-
-            <AlertBox
-                type="warning"
-                title="Peringatan!"
-                message="3 tugas belum diselesaikan."
-            />
-
-            <AlertBox
-                type="error"
-                title="Error!"
-                message="Terjadi kesalahan."
-            />
-        </div>
-    );
-}
-
-export default AlertBoxDemo;
-export { AlertBox };
+// export { AlertBox }; // Tambahkan ini jika ingin mengekspor komponen ini saja
