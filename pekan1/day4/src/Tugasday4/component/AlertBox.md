@@ -84,4 +84,4 @@ function AlertBox({ type = 'info', message, title }) {
 
 export default AlertBox;
 
-// export { AlertBox }; // Jika ingin menggunakan named export
+
