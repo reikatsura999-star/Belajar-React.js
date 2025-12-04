@@ -1,9 +1,7 @@
-```jsx
 import React from 'react';
 
 // Komponen AlertBox dengan Dynamic Styling berdasarkan props
 function AlertBox({ type = 'info', message, title }) {
-    
     // Fungsi untuk mendapatkan style berdasarkan type
     const getAlertStyle = (alertType) => {
         const baseStyle = {
