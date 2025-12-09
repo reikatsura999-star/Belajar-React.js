@@ -1,0 +1,47 @@
+/* Simple styling for ProductList */
+.product-list {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.products-grid {
+  list-style: none;
+  padding: 0;
+  margin: 12px 0 0 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 12px;
+}
+
+.product-card {
+  border: 1px solid #e6e6e6;
+  padding: 12px;
+  border-radius: 8px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+}
+
+.product-name {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.product-price {
+  color: #0070f3;
+  font-weight: 700;
+}
+
+@media (max-width: 420px) {
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+}
