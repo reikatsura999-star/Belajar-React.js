@@ -1,18 +1,22 @@
-import React, { useState } from 'react';
-import WindowSizeTracker from './components/WindowSizeTracker';
-import MultiEffectComponent from './components/MultiEffectComponent';
+import AxiosDataComponent from "./components/AxiosDataComponent"
+import FetchDataComponent from "./components/FetchDataComponent"
+import "./App.css"
+import AsyncAwaitInEffect from "./components/AsyncAwaitInEffect"
+import AbortFetchComponent from "./components/AbortFetchComponent"
+import RegistrationForm from "./components/UserListManipulated"
+import UserListManipulated from "./components/UserListManipulated"
 
 
 function App() {
-  const [showTracker, setShowTracker] = useState(true);
-  
   return (
-  <div>
-    <h1>Materi React useEffect</h1>
-    <MultiEffectComponent />
-    
-    </div>
+    <>
+      {/* <FetchDataComponent/>
+      <AxiosDataComponent/>
+      <AsyncAwaitInEffect/>
+      <AbortFetchComponent/> */}
+      <UserListManipulated/>
+    </>
   )
 }
 
-export default App;
+export default App
