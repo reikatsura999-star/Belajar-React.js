@@ -1,39 +1,40 @@
-import React, { useState, useContext } from "react";
-import { UserContext } from "../context/UserContext.jsx";
+import React, { useState, useContext } from 'react';
+import useUserContext from '../contexts/useUserContext';
 
-const UpdateProfile = () => {
-  const { updateProfile } = useContext(UserContext);
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
+function UpdateProfile() {
+  const { updateProfile } = useUserContext()
+  const [form, setForm] = useState({ name: '', email: '' });
+
+  const handleChange = (e) =>
+    setForm({ ...form, [e.target.name]: e.target.value });
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    updateProfile(name, email); // update state global
-    setName("");
-    setEmail("");
+    updateProfile(form.name, form.email);
+    setForm({ name: '', email: '' });
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} style={{ marginTop: '20px' }}>
       <h3>Update Profile</h3>
       <input
-        type="text"
+        name="name"
         placeholder="Nama baru"
-        value={name}
-        onChange={(e) => setName(e.target.value)}
+        value={form.name}
+        onChange={handleChange}
       />
       <br />
-      <br />
       <input
+        name="email"
         type="email"
         placeholder="Email baru"
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
+        value={form.email}
+        onChange={handleChange}
       />
       <br />
       <button type="submit">Simpan</button>
     </form>
   );
-};
+}
 
 export default UpdateProfile;
