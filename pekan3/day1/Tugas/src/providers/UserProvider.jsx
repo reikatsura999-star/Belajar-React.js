@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import UserContext from './UserContext';
+import UserContext from '../contexts/UserContext';
 
 function UserProvider({ children }) {
   const [user, setUser] = useState({ name: 'Guest', email: '', isLoggedIn: false });

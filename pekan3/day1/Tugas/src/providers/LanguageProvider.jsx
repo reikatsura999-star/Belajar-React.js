@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import LanguageContext from "./LanguageContext";
+import LanguageContext from "../contexts/LanguageContext";
 
 // Provider terpisah
 function LanguageProvider({ children }) {

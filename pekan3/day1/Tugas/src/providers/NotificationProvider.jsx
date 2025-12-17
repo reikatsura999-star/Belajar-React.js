@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import NotificationContext from "./NotificationContext";
+import NotificationContext from "../contexts/NotificationContext";
 
 function NotificationProvider({ children }) {
   const [count, setCount] = useState(0);
