@@ -1,0 +1,32 @@
+nav {
+  background: #4CAF50;
+  padding: 15px 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+/* Warna default tiap link */
+.link-beranda { color: #efefef; }
+.link-about { color: #ffffff; }
+.link-contact { color: #ffffff; }
+
+/* Warna saat aktif (halaman sedang dibuka) */
+.active-link {
+  color: #fff;          /* putih */
+  background: #333;     /* background gelap */
+  padding: 5px 10px;
+  border-radius: 5px;
+}
