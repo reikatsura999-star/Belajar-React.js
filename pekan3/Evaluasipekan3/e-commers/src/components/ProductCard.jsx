@@ -23,7 +23,10 @@ export default function ProductCard({ product }) {
       <h4 style={{ fontSize: 14, margin: '8px 0' }}>{product.title}</h4>
       <p>Rp{(product.price * 15_000).toLocaleString()}</p>{' '}
       {/* asumsi 1 USD = 15k IDR */}
-      <button onClick={() => add(product)}>+ Keranjang</button>
+      <button onClick={() => {
+        console.log('Clicked add for:', product);
+        add(product);
+      }}>+ Keranjang</button>
     </div>
   );
 }
